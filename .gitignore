@@ -1,0 +1,16 @@
+*.iml
+.gradle/
+gradlew.bat
+/local.properties
+/.idea/workspace.xml
+/.idea/libraries/
+.DS_Store
+/build/
+/captures/
+/app/build/
+.idea/compiler.xml
+.idea/copyright/
+.idea/gradle.xml
+.idea/misc.xml
+/Node/
+java_pid5264.hprof
