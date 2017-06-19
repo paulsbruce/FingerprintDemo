@@ -13,4 +13,4 @@ gradlew.bat
 .idea/gradle.xml
 .idea/misc.xml
 /Node/
-java_pid5264.hprof
+app/libs/
