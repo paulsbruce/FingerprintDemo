@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/paul/.android/build-cache/ce3a6ddf1686aa52ae49ecb1134983734e0cba0f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_478b3b4d4c91343f7cff43f6fbdfd6f6420a7d67/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/.android/build-cache/9bb110edbcc42c9139af3ca24d62e7fc811a051d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_c0f08a6d75ce6e5fbddc6ab664d1f31cdf188637/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/.android/build-cache/240289cf329c0715414f2d85d28f65a91a558b3d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4d5c625e89e0aacd8d65e3b4b4a16a28db303be5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/.android/build-cache/7b71300664d3ba3c624f1beb98d4de9957b542ec/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_6610bdbb41d2581dfb5f65bb354fdea9dec3d71b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/.android/build-cache/41db575c2bd2e4dd292a80557d4b1b37758beda6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_4cf2d74b418765a4caaca702a2a9ba6531e54131/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/.android/build-cache/c8e9777779d465c4636d1c67eb7b9f1cfc231559/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_f7692a50377e28bc3f3e0429fcb97fe073d00433/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/.android/build-cache/d0ed248de7ed6ae0fde93eb88776e0834b55fbbe/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_a19b1662381301e6e3c99d9ea9b18bc372cfd9a4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/.android/build-cache/3cf3e692ddc0ea203c7b3e3ca7c4872d38ccb121/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_d180c52d2ca2aec7699bfe1fb1d6461041f383bb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/.android/build-cache/410725da1c310ecbdce05cd608c52b8d377a5f31/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_89d7b6a09698c5673a3b3768f044756284195ab9/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/constraint-layout-solver-1.0.2_76bc74e58814dba9cc5a3f49ffa89cdca25cd04b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="caff8e51a24901cfc9cd7e1cf83d84f4cb0c103b">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_dc57be6521f3312d4324b7fe4ccfc680c3c0d250/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/.android/build-cache/d586326318d688ef30e01091bd628489a197e97c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/classes_edbc8dc2fdcda40daf466b24e90fa9f479abcea5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/25.3.1/support-annotations-25.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-25.3.1_73317898fd9f17c9ef635122fe21761bf640f784/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="1cd2b3b0ba5079a6c222c7dd63756c1884b5b67c">
+        <dex dex="/Users/paul/git/paulsbruce/FingerprintDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_cad0a77f6dc5dffa954d6c210758a5964b268695/classes.dex" />
+    </item>
+
+</items>
