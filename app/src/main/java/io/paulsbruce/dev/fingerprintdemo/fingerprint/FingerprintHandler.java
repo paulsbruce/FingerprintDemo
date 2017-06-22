@@ -1,14 +1,23 @@
-package io.paulsbruce.dev.fingerprintdemo;
+package io.paulsbruce.dev.fingerprintdemo.fingerprint;
 
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.hardware.fingerprint.FingerprintManager;
 import android.os.CancellationSignal;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
+import android.util.Log;
+import android.util.Printer;
 import android.widget.TextView;
+
+import io.paulsbruce.dev.fingerprintdemo.R;
+
+import static android.content.ContentValues.TAG;
 
 /**
  * Created by paul on 6/19/17.
@@ -31,7 +40,14 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
         if (ActivityCompat.checkSelfPermission(context, Manifest.permission.USE_FINGERPRINT) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
-        manager.authenticate(cryptoObject, cancellationSignal, 0, this, null);
+        Looper looper = Looper.getMainLooper();
+        looper.setMessageLogging(new Printer() {
+            @Override
+            public void println(String x) {
+                Log.d(TAG, x);
+            }
+        });
+        manager.authenticate(cryptoObject, cancellationSignal, 0, this, new Handler(looper));
     }
 
 
@@ -56,6 +72,11 @@ public class FingerprintHandler extends FingerprintManager.AuthenticationCallbac
     @Override
     public void onAuthenticationSucceeded(FingerprintManager.AuthenticationResult result) {
         this.update("Fingerprint Authentication succeeded.", true);
+
+        Activity activity = (Activity)context;
+        Intent returnIntent = new Intent();
+        activity.setResult(Activity.RESULT_OK, returnIntent);
+        activity.finish();
     }
 
 
