@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 
-nohup $ANDROID_HOME/tools/emulator -avd Nexus_6_API_25 -verbose & # background this task to continue process
+set LOCAL_AVD=Pixel_API_25 #Nexus_6_API_25
+
+nohup $ANDROID_HOME/tools/emulator -avd Pixel_API_25 -verbose & # background this task to continue process
 
 while true; do
-  if [[ $(adb shell getprop sys.boot_completed) =~ "1" ]]; then
+  if [[ $($ANDROID_HOME/platform-tools/adb shell getprop sys.boot_completed) =~ "1" ]]; then
     break
   fi
-  sleep .5
+  sleep 1
 done
 
 sleep 10s # because there's no better way than above, which is kind of close

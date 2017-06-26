@@ -1,11 +1,11 @@
-package io.paulsbruce.dev.uitests.appium;
+package io.paulsbruce.dev.fingerprintdemo.appium;
 
 import org.junit.After;
 import org.junit.Before;
 import org.junit.experimental.categories.Category;
 import org.openqa.selenium.WebDriver;
 
-import io.paulsbruce.dev.uitests.webdriver.WebDriverFactory;
+import io.paulsbruce.dev.fingerprintdemo.appium.webdriver.WebDriverFactory;
 
 /**
  * Created by paul on 6/22/17.

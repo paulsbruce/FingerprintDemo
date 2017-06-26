@@ -1,4 +1,4 @@
-package io.paulsbruce.dev.uitests.appium;
+package io.paulsbruce.dev.fingerprintdemo.appium;
 
 /**
  * Created by paul on 6/21/17.

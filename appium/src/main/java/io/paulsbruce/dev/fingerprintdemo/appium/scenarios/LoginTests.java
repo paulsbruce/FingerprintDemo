@@ -1,12 +1,13 @@
-package io.paulsbruce.dev.uitests.appium.scenarios;
+package io.paulsbruce.dev.fingerprintdemo.appium.scenarios;
 
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 import org.openqa.selenium.By;
 
 import java.io.IOException;
 
-import io.paulsbruce.dev.uitests.appium.UITestBase;
+import io.paulsbruce.dev.fingerprintdemo.appium.UITestBase;
 
 public class LoginTests extends UITestBase {
 

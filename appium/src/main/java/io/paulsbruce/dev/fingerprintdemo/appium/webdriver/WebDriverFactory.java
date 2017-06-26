@@ -1,4 +1,4 @@
-package io.paulsbruce.dev.uitests.webdriver;
+package io.paulsbruce.dev.fingerprintdemo.appium.webdriver;
 
 import org.openqa.selenium.WebDriver;
 

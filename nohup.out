@@ -1,0 +1,619 @@
+nohup: /Users/paulb/Library/Android/sdk/tools/emulator: No such file or directory
+nohup: /Users/paulb/Library/Android/sdk/tools/emulator: No such file or directory
+emulator: Android virtual device file at: /Users/paul/.android/avd/Pixel_API_25.ini
+emulator: virtual device content at /Users/paul/.android/avd/Pixel_API_25.avd
+emulator: virtual device config file: /Users/paul/.android/avd/Pixel_API_25.avd/config.ini
+emulator: using core hw config path: /Users/paul/.android/avd/Pixel_API_25.avd/hardware-qemu.ini
+emulator: Found AVD target API level: 25
+emulator: Read property file at /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//build.prop
+emulator: No boot.prop property file found.
+emulator: found skin 'pixel' in directory: /Users/paul/Library/Android/sdk/skins/
+emulator: autoconfig: -skin pixel
+emulator: autoconfig: -skindir /Users/paul/Library/Android/sdk/skins/
+emulator: autoconfig: -kernel /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu
+emulator: Auto-detect: Kernel image requires new device naming scheme.
+emulator: Auto-detect: Kernel does not support YAFFS2 partitions.
+emulator: autoconfig: -ramdisk /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img
+emulator: Using initial system image: /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//system.img
+emulator: autoconfig: -data /Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img
+emulator: autoconfig: -initdata /Users/paul/.android/avd/Pixel_API_25.avd/userdata.img
+emulator: autoconfig: -cache /Users/paul/.android/avd/Pixel_API_25.avd/cache.img
+emulator: autoconfig: -sdcard /Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img
+emulator: Physical RAM size: 1536MB
+
+emulator: VM heap size 256MB is below hardware specified minimum of 384MB,setting it to that value
+emulator: System image is read only
+emulator: Found 1 DNS servers: 10.0.0.1
+emulator: trying to load skin file '/Users/paul/Library/Android/sdk/skins//pixel/layout'
+emulator: WARNING: encryption is off
+emulator: GPU emulation enabled using 'host' mode
+emulator: Using default value for kernel Contiguous Memory Allocation.
+emulator: Found 1 DNS servers: 10.0.0.1
+Content of hardware configuration file:
+  hw.cpu.arch = arm
+  hw.cpu.model = cortex-a8
+  hw.cpu.ncore = 2
+  hw.ramSize = 1536
+  hw.screen = multi-touch
+  hw.mainKeys = false
+  hw.trackBall = false
+  hw.keyboard = true
+  hw.keyboard.lid = false
+  hw.keyboard.charmap = qwerty2
+  hw.dPad = false
+  hw.rotaryInput = false
+  hw.gsmModem = true
+  hw.gps = true
+  hw.battery = true
+  hw.accelerometer = true
+  hw.audioInput = true
+  hw.audioOutput = true
+  hw.sdCard = true
+  hw.sdCard.path = /Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img
+  disk.cachePartition = true
+  disk.cachePartition.path = /Users/paul/.android/avd/Pixel_API_25.avd/cache.img
+  disk.cachePartition.size = 66m
+  hw.lcd.width = 1080
+  hw.lcd.height = 1920
+  hw.lcd.depth = 16
+  hw.lcd.density = 480
+  hw.lcd.backlight = true
+  hw.gpu.enabled = true
+  hw.gpu.mode = host
+  hw.gpu.blacklisted = no
+  hw.initialOrientation = Portrait
+  hw.camera.back = emulated
+  hw.camera.front = emulated
+  vm.heapSize = 384
+  hw.sensors.light = true
+  hw.sensors.pressure = true
+  hw.sensors.humidity = true
+  hw.sensors.proximity = true
+  hw.sensors.magnetic_field = true
+  hw.sensors.orientation = true
+  hw.sensors.temperature = true
+  hw.useext4 = true
+  kernel.path = /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu
+  kernel.newDeviceNaming = yes
+  kernel.supportsYaffs2 = no
+  disk.ramdisk.path = /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img
+  disk.systemPartition.initPath = /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//system.img
+  disk.systemPartition.size = 2g
+  disk.dataPartition.path = /Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img
+  disk.dataPartition.size = 800m
+  PlayStore.enabled = false
+  avd.name = Pixel_API_25
+.
+QEMU options list:
+emulator: argv[00] = "/Users/paul/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-armel"
+emulator: argv[01] = "-dns-server"
+emulator: argv[02] = "10.0.0.1"
+emulator: argv[03] = "-serial"
+emulator: argv[04] = "null"
+emulator: argv[05] = "-cpu"
+emulator: argv[06] = "cortex-a15"
+emulator: argv[07] = "-machine"
+emulator: argv[08] = "type=ranchu"
+emulator: argv[09] = "-m"
+emulator: argv[10] = "1536"
+emulator: argv[11] = "-lcd-density"
+emulator: argv[12] = "480"
+emulator: argv[13] = "-kernel"
+emulator: argv[14] = "/Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu"
+emulator: argv[15] = "-initrd"
+emulator: argv[16] = "/Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img"
+emulator: argv[17] = "-object"
+emulator: argv[18] = "iothread,id=disk-iothread"
+emulator: argv[19] = "-drive"
+emulator: argv[20] = "overlap-check=none,cache=unsafe,index=0,id=sdcard,file=/Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img.qcow2,l2-cache-size=1048576"
+emulator: argv[21] = "-device"
+emulator: argv[22] = "virtio-blk-device,drive=sdcard,iothread=disk-iothread"
+emulator: argv[23] = "-drive"
+emulator: argv[24] = "overlap-check=none,cache=unsafe,index=1,id=userdata,file=/Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img.qcow2,l2-cache-size=1048576"
+emulator: argv[25] = "-device"
+emulator: argv[26] = "virtio-blk-device,drive=userdata,iothread=disk-iothread"
+emulator: argv[27] = "-drive"
+emulator: argv[28] = "overlap-check=none,cache=unsafe,index=2,id=cache,file=/Users/paul/.android/avd/Pixel_API_25.avd/cache.img.qcow2,l2-cache-size=1048576"
+emulator: argv[29] = "-device"
+emulator: argv[30] = "virtio-blk-device,drive=cache,iothread=disk-iothread"
+emulator: argv[31] = "-drive"
+emulator: argv[32] = "overlap-check=none,cache=unsafe,index=3,id=system,file=/Users/paul/.android/avd/Pixel_API_25.avd/system.img.qcow2,read-only"
+emulator: argv[33] = "-device"
+emulator: argv[34] = "virtio-blk-device,drive=system,iothread=disk-iothread"
+emulator: argv[35] = "-netdev"
+emulator: argv[36] = "user,id=mynet"
+emulator: argv[37] = "-device"
+emulator: argv[38] = "virtio-net-device,netdev=mynet"
+emulator: argv[39] = "-netdev"
+emulator: argv[40] = "user,id=mynet2,net=10.0.3.0/24"
+emulator: argv[41] = "-device"
+emulator: argv[42] = "virtio-net-device,netdev=mynet2"
+emulator: argv[43] = "-show-cursor"
+emulator: argv[44] = "-L"
+emulator: argv[45] = "/Users/paul/Library/Android/sdk/emulator/lib/pc-bios"
+emulator: argv[46] = "-append"
+emulator: argv[47] = "qemu=1 androidboot.hardware=ranchu keep_bootcon earlyprintk=ttyAMA0 android.qemud=1 console=0 console=0 android.checkjni=1 qemu.gles=1 cma=256M"
+emulator: argv[48] = "-android-hw"
+emulator: argv[49] = "/Users/paul/.android/avd/Pixel_API_25.avd/hardware-qemu.ini"
+Concatenated QEMU options:
+ /Users/paul/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-armel -dns-server 10.0.0.1 -serial null -cpu cortex-a15 -machine type=ranchu -m 1536 -lcd-density 480 -kernel /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu -initrd /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img -object iothread,id=disk-iothread -drive overlap-check=none,cache=unsafe,index=0,id=sdcard,file=/Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img.qcow2,l2-cache-size=1048576 -device virtio-blk-device,drive=sdcard,iothread=disk-iothread -drive overlap-check=none,cache=unsafe,index=1,id=userdata,file=/Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img.qcow2,l2-cache-size=1048576 -device virtio-blk-device,drive=userdata,iothread=disk-iothread -drive overlap-check=none,cache=unsafe,index=2,id=cache,file=/Users/paul/.android/avd/Pixel_API_25.avd/cache.img.qcow2,l2-cache-size=1048576 -device virtio-blk-device,drive=cache,iothread=disk-iothread -drive overlap-check=none,cache=unsafe,index=3,id=system,file=/Users/paul/.android/avd/Pixel_API_25.avd/system.img.qcow2,read-only -device virtio-blk-device,drive=system,iothread=disk-iothread -netdev user,id=mynet -device virtio-net-device,netdev=mynet -netdev user,id=mynet2,net=10.0.3.0/24 -device virtio-net-device,netdev=mynet2 -show-cursor -L /Users/paul/Library/Android/sdk/emulator/lib/pc-bios -append 'qemu=1 androidboot.hardware=ranchu keep_bootcon earlyprintk=ttyAMA0 android.qemud=1 console=0 console=0 android.checkjni=1 qemu.gles=1 cma=256M' -android-hw /Users/paul/.android/avd/Pixel_API_25.avd/hardware-qemu.ini
+emulator: Starting QEMU main loop
+emulator: registered 'boot-properties' qemud service
+emulator: Adding boot property: 'qemu.sf.fake_camera' = 'both'
+emulator: Initializing hardware OpenGLES emulation support
+emulator: Adding boot property: 'ro.opengles.version' = '131072'
+emulator: Adding boot property: 'dalvik.vm.heapsize' = '384m'
+emulator: Adding boot property: 'qemu.hw.mainkeys' = '0'
+emulator: Adding boot property: 'qemu.sf.lcd_density' = '480'
+emulator: goldfish_events.have-dpad: false
+emulator: goldfish_events.have-trackball: false
+emulator: goldfish_events.have-camera: true
+emulator: goldfish_events.have-keyboard: true
+emulator: goldfish_events.have-lidswitch: false
+emulator: goldfish_events.have-touch: false
+emulator: goldfish_events.have-multitouch: true
+emulator: control console listening on port 5554, ADB on port 5555
+Not using any http proxy
+emulator: android_hw_fingerprint_init: fingerprint qemud listen service initialized
+
+emulator: onGuestSendCommand: [0x7fce6be7ff10] Adb connected, start proxing data
+emulator: _hwFingerprint_connect: connect finger print listen is called
+
+emulator: got message from guest system fingerprint HAL
+
+emulator: Done with QEMU main loop
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+emulator: User configuration saved to /Users/paul/.android/avd/Pixel_API_25.avd/emulator-user.ini
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+emulator: Android virtual device file at: /Users/paul/.android/avd/Pixel_API_25.ini
+emulator: virtual device content at /Users/paul/.android/avd/Pixel_API_25.avd
+emulator: virtual device config file: /Users/paul/.android/avd/Pixel_API_25.avd/config.ini
+emulator: using core hw config path: /Users/paul/.android/avd/Pixel_API_25.avd/hardware-qemu.ini
+emulator: Found AVD target API level: 25
+emulator: Read property file at /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//build.prop
+emulator: No boot.prop property file found.
+emulator: found skin 'pixel' in directory: /Users/paul/Library/Android/sdk/skins/
+emulator: autoconfig: -skin pixel
+emulator: autoconfig: -skindir /Users/paul/Library/Android/sdk/skins/
+emulator: autoconfig: -kernel /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu
+emulator: Auto-detect: Kernel image requires new device naming scheme.
+emulator: Auto-detect: Kernel does not support YAFFS2 partitions.
+emulator: autoconfig: -ramdisk /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img
+emulator: Using initial system image: /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//system.img
+emulator: autoconfig: -data /Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img
+emulator: autoconfig: -initdata /Users/paul/.android/avd/Pixel_API_25.avd/userdata.img
+emulator: autoconfig: -cache /Users/paul/.android/avd/Pixel_API_25.avd/cache.img
+emulator: autoconfig: -sdcard /Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img
+emulator: Physical RAM size: 1536MB
+
+emulator: VM heap size 256MB is below hardware specified minimum of 384MB,setting it to that value
+emulator: System image is read only
+emulator: Found 1 DNS servers: 10.0.0.1
+emulator: trying to load skin file '/Users/paul/Library/Android/sdk/skins//pixel/layout'
+emulator: WARNING: encryption is off
+emulator: GPU emulation enabled using 'host' mode
+emulator: Using default value for kernel Contiguous Memory Allocation.
+emulator: Found 1 DNS servers: 10.0.0.1
+Content of hardware configuration file:
+  hw.cpu.arch = arm
+  hw.cpu.model = cortex-a8
+  hw.cpu.ncore = 2
+  hw.ramSize = 1536
+  hw.screen = multi-touch
+  hw.mainKeys = false
+  hw.trackBall = false
+  hw.keyboard = true
+  hw.keyboard.lid = false
+  hw.keyboard.charmap = qwerty2
+  hw.dPad = false
+  hw.rotaryInput = false
+  hw.gsmModem = true
+  hw.gps = true
+  hw.battery = true
+  hw.accelerometer = true
+  hw.audioInput = true
+  hw.audioOutput = true
+  hw.sdCard = true
+  hw.sdCard.path = /Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img
+  disk.cachePartition = true
+  disk.cachePartition.path = /Users/paul/.android/avd/Pixel_API_25.avd/cache.img
+  disk.cachePartition.size = 66m
+  hw.lcd.width = 1080
+  hw.lcd.height = 1920
+  hw.lcd.depth = 16
+  hw.lcd.density = 480
+  hw.lcd.backlight = true
+  hw.gpu.enabled = true
+  hw.gpu.mode = host
+  hw.gpu.blacklisted = no
+  hw.initialOrientation = Portrait
+  hw.camera.back = emulated
+  hw.camera.front = emulated
+  vm.heapSize = 384
+  hw.sensors.light = true
+  hw.sensors.pressure = true
+  hw.sensors.humidity = true
+  hw.sensors.proximity = true
+  hw.sensors.magnetic_field = true
+  hw.sensors.orientation = true
+  hw.sensors.temperature = true
+  hw.useext4 = true
+  kernel.path = /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu
+  kernel.newDeviceNaming = yes
+  kernel.supportsYaffs2 = no
+  disk.ramdisk.path = /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img
+  disk.systemPartition.initPath = /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//system.img
+  disk.systemPartition.size = 2g
+  disk.dataPartition.path = /Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img
+  disk.dataPartition.size = 800m
+  PlayStore.enabled = false
+  avd.name = Pixel_API_25
+.
+QEMU options list:
+emulator: argv[00] = "/Users/paul/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-armel"
+emulator: argv[01] = "-dns-server"
+emulator: argv[02] = "10.0.0.1"
+emulator: argv[03] = "-serial"
+emulator: argv[04] = "null"
+emulator: argv[05] = "-cpu"
+emulator: argv[06] = "cortex-a15"
+emulator: argv[07] = "-machine"
+emulator: argv[08] = "type=ranchu"
+emulator: argv[09] = "-m"
+emulator: argv[10] = "1536"
+emulator: argv[11] = "-lcd-density"
+emulator: argv[12] = "480"
+emulator: argv[13] = "-kernel"
+emulator: argv[14] = "/Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu"
+emulator: argv[15] = "-initrd"
+emulator: argv[16] = "/Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img"
+emulator: argv[17] = "-object"
+emulator: argv[18] = "iothread,id=disk-iothread"
+emulator: argv[19] = "-drive"
+emulator: argv[20] = "overlap-check=none,cache=unsafe,index=0,id=sdcard,file=/Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img.qcow2,l2-cache-size=1048576"
+emulator: argv[21] = "-device"
+emulator: argv[22] = "virtio-blk-device,drive=sdcard,iothread=disk-iothread"
+emulator: argv[23] = "-drive"
+emulator: argv[24] = "overlap-check=none,cache=unsafe,index=1,id=userdata,file=/Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img.qcow2,l2-cache-size=1048576"
+emulator: argv[25] = "-device"
+emulator: argv[26] = "virtio-blk-device,drive=userdata,iothread=disk-iothread"
+emulator: argv[27] = "-drive"
+emulator: argv[28] = "overlap-check=none,cache=unsafe,index=2,id=cache,file=/Users/paul/.android/avd/Pixel_API_25.avd/cache.img.qcow2,l2-cache-size=1048576"
+emulator: argv[29] = "-device"
+emulator: argv[30] = "virtio-blk-device,drive=cache,iothread=disk-iothread"
+emulator: argv[31] = "-drive"
+emulator: argv[32] = "overlap-check=none,cache=unsafe,index=3,id=system,file=/Users/paul/.android/avd/Pixel_API_25.avd/system.img.qcow2,read-only"
+emulator: argv[33] = "-device"
+emulator: argv[34] = "virtio-blk-device,drive=system,iothread=disk-iothread"
+emulator: argv[35] = "-netdev"
+emulator: argv[36] = "user,id=mynet"
+emulator: argv[37] = "-device"
+emulator: argv[38] = "virtio-net-device,netdev=mynet"
+emulator: argv[39] = "-netdev"
+emulator: argv[40] = "user,id=mynet2,net=10.0.3.0/24"
+emulator: argv[41] = "-device"
+emulator: argv[42] = "virtio-net-device,netdev=mynet2"
+emulator: argv[43] = "-show-cursor"
+emulator: argv[44] = "-L"
+emulator: argv[45] = "/Users/paul/Library/Android/sdk/emulator/lib/pc-bios"
+emulator: argv[46] = "-append"
+emulator: argv[47] = "qemu=1 androidboot.hardware=ranchu keep_bootcon earlyprintk=ttyAMA0 android.qemud=1 console=0 console=0 android.checkjni=1 qemu.gles=1 cma=256M"
+emulator: argv[48] = "-android-hw"
+emulator: argv[49] = "/Users/paul/.android/avd/Pixel_API_25.avd/hardware-qemu.ini"
+Concatenated QEMU options:
+ /Users/paul/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-armel -dns-server 10.0.0.1 -serial null -cpu cortex-a15 -machine type=ranchu -m 1536 -lcd-density 480 -kernel /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu -initrd /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img -object iothread,id=disk-iothread -drive overlap-check=none,cache=unsafe,index=0,id=sdcard,file=/Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img.qcow2,l2-cache-size=1048576 -device virtio-blk-device,drive=sdcard,iothread=disk-iothread -drive overlap-check=none,cache=unsafe,index=1,id=userdata,file=/Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img.qcow2,l2-cache-size=1048576 -device virtio-blk-device,drive=userdata,iothread=disk-iothread -drive overlap-check=none,cache=unsafe,index=2,id=cache,file=/Users/paul/.android/avd/Pixel_API_25.avd/cache.img.qcow2,l2-cache-size=1048576 -device virtio-blk-device,drive=cache,iothread=disk-iothread -drive overlap-check=none,cache=unsafe,index=3,id=system,file=/Users/paul/.android/avd/Pixel_API_25.avd/system.img.qcow2,read-only -device virtio-blk-device,drive=system,iothread=disk-iothread -netdev user,id=mynet -device virtio-net-device,netdev=mynet -netdev user,id=mynet2,net=10.0.3.0/24 -device virtio-net-device,netdev=mynet2 -show-cursor -L /Users/paul/Library/Android/sdk/emulator/lib/pc-bios -append 'qemu=1 androidboot.hardware=ranchu keep_bootcon earlyprintk=ttyAMA0 android.qemud=1 console=0 console=0 android.checkjni=1 qemu.gles=1 cma=256M' -android-hw /Users/paul/.android/avd/Pixel_API_25.avd/hardware-qemu.ini
+emulator: Starting QEMU main loop
+emulator: registered 'boot-properties' qemud service
+emulator: Adding boot property: 'qemu.sf.fake_camera' = 'both'
+emulator: Initializing hardware OpenGLES emulation support
+emulator: Adding boot property: 'ro.opengles.version' = '131072'
+emulator: Adding boot property: 'dalvik.vm.heapsize' = '384m'
+emulator: Adding boot property: 'qemu.hw.mainkeys' = '0'
+emulator: Adding boot property: 'qemu.sf.lcd_density' = '480'
+emulator: goldfish_events.have-dpad: false
+emulator: goldfish_events.have-trackball: false
+emulator: goldfish_events.have-camera: true
+emulator: goldfish_events.have-keyboard: true
+emulator: goldfish_events.have-lidswitch: false
+emulator: goldfish_events.have-touch: false
+emulator: goldfish_events.have-multitouch: true
+emulator: control console listening on port 5554, ADB on port 5555
+Not using any http proxy
+emulator: android_hw_fingerprint_init: fingerprint qemud listen service initialized
+
+emulator: onGuestSendCommand: [0x7fc2e17792a0] Adb connected, start proxing data
+emulator: touched fingerprint sensor with finger id 1
+
+emulator: Done with QEMU main loop
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+emulator: User configuration saved to /Users/paul/.android/avd/Pixel_API_25.avd/emulator-user.ini
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+emulator: Android virtual device file at: /Users/paul/.android/avd/Pixel_API_25.ini
+emulator: virtual device content at /Users/paul/.android/avd/Pixel_API_25.avd
+emulator: virtual device config file: /Users/paul/.android/avd/Pixel_API_25.avd/config.ini
+emulator: using core hw config path: /Users/paul/.android/avd/Pixel_API_25.avd/hardware-qemu.ini
+emulator: Found AVD target API level: 25
+emulator: Read property file at /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//build.prop
+emulator: No boot.prop property file found.
+emulator: found skin 'pixel' in directory: /Users/paul/Library/Android/sdk/skins/
+emulator: autoconfig: -skin pixel
+emulator: autoconfig: -skindir /Users/paul/Library/Android/sdk/skins/
+emulator: autoconfig: -kernel /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu
+emulator: Auto-detect: Kernel image requires new device naming scheme.
+emulator: Auto-detect: Kernel does not support YAFFS2 partitions.
+emulator: autoconfig: -ramdisk /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img
+emulator: Using initial system image: /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//system.img
+emulator: autoconfig: -data /Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img
+emulator: autoconfig: -initdata /Users/paul/.android/avd/Pixel_API_25.avd/userdata.img
+emulator: autoconfig: -cache /Users/paul/.android/avd/Pixel_API_25.avd/cache.img
+emulator: autoconfig: -sdcard /Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img
+emulator: Physical RAM size: 1536MB
+
+emulator: VM heap size 256MB is below hardware specified minimum of 384MB,setting it to that value
+emulator: System image is read only
+emulator: Found 1 DNS servers: 10.0.0.1
+emulator: trying to load skin file '/Users/paul/Library/Android/sdk/skins//pixel/layout'
+emulator: WARNING: encryption is off
+emulator: GPU emulation enabled using 'host' mode
+emulator: Using default value for kernel Contiguous Memory Allocation.
+emulator: Found 1 DNS servers: 10.0.0.1
+Content of hardware configuration file:
+  hw.cpu.arch = arm
+  hw.cpu.model = cortex-a8
+  hw.cpu.ncore = 2
+  hw.ramSize = 1536
+  hw.screen = multi-touch
+  hw.mainKeys = false
+  hw.trackBall = false
+  hw.keyboard = true
+  hw.keyboard.lid = false
+  hw.keyboard.charmap = qwerty2
+  hw.dPad = false
+  hw.rotaryInput = false
+  hw.gsmModem = true
+  hw.gps = true
+  hw.battery = true
+  hw.accelerometer = true
+  hw.audioInput = true
+  hw.audioOutput = true
+  hw.sdCard = true
+  hw.sdCard.path = /Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img
+  disk.cachePartition = true
+  disk.cachePartition.path = /Users/paul/.android/avd/Pixel_API_25.avd/cache.img
+  disk.cachePartition.size = 66m
+  hw.lcd.width = 1080
+  hw.lcd.height = 1920
+  hw.lcd.depth = 16
+  hw.lcd.density = 480
+  hw.lcd.backlight = true
+  hw.gpu.enabled = true
+  hw.gpu.mode = host
+  hw.gpu.blacklisted = no
+  hw.initialOrientation = Portrait
+  hw.camera.back = emulated
+  hw.camera.front = emulated
+  vm.heapSize = 384
+  hw.sensors.light = true
+  hw.sensors.pressure = true
+  hw.sensors.humidity = true
+  hw.sensors.proximity = true
+  hw.sensors.magnetic_field = true
+  hw.sensors.orientation = true
+  hw.sensors.temperature = true
+  hw.useext4 = true
+  kernel.path = /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu
+  kernel.newDeviceNaming = yes
+  kernel.supportsYaffs2 = no
+  disk.ramdisk.path = /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img
+  disk.systemPartition.initPath = /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//system.img
+  disk.systemPartition.size = 2g
+  disk.dataPartition.path = /Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img
+  disk.dataPartition.size = 800m
+  PlayStore.enabled = false
+  avd.name = Pixel_API_25
+.
+QEMU options list:
+emulator: argv[00] = "/Users/paul/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-armel"
+emulator: argv[01] = "-dns-server"
+emulator: argv[02] = "10.0.0.1"
+emulator: argv[03] = "-serial"
+emulator: argv[04] = "null"
+emulator: argv[05] = "-cpu"
+emulator: argv[06] = "cortex-a15"
+emulator: argv[07] = "-machine"
+emulator: argv[08] = "type=ranchu"
+emulator: argv[09] = "-m"
+emulator: argv[10] = "1536"
+emulator: argv[11] = "-lcd-density"
+emulator: argv[12] = "480"
+emulator: argv[13] = "-kernel"
+emulator: argv[14] = "/Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu"
+emulator: argv[15] = "-initrd"
+emulator: argv[16] = "/Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img"
+emulator: argv[17] = "-object"
+emulator: argv[18] = "iothread,id=disk-iothread"
+emulator: argv[19] = "-drive"
+emulator: argv[20] = "overlap-check=none,cache=unsafe,index=0,id=sdcard,file=/Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img.qcow2,l2-cache-size=1048576"
+emulator: argv[21] = "-device"
+emulator: argv[22] = "virtio-blk-device,drive=sdcard,iothread=disk-iothread"
+emulator: argv[23] = "-drive"
+emulator: argv[24] = "overlap-check=none,cache=unsafe,index=1,id=userdata,file=/Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img.qcow2,l2-cache-size=1048576"
+emulator: argv[25] = "-device"
+emulator: argv[26] = "virtio-blk-device,drive=userdata,iothread=disk-iothread"
+emulator: argv[27] = "-drive"
+emulator: argv[28] = "overlap-check=none,cache=unsafe,index=2,id=cache,file=/Users/paul/.android/avd/Pixel_API_25.avd/cache.img.qcow2,l2-cache-size=1048576"
+emulator: argv[29] = "-device"
+emulator: argv[30] = "virtio-blk-device,drive=cache,iothread=disk-iothread"
+emulator: argv[31] = "-drive"
+emulator: argv[32] = "overlap-check=none,cache=unsafe,index=3,id=system,file=/Users/paul/.android/avd/Pixel_API_25.avd/system.img.qcow2,read-only"
+emulator: argv[33] = "-device"
+emulator: argv[34] = "virtio-blk-device,drive=system,iothread=disk-iothread"
+emulator: argv[35] = "-netdev"
+emulator: argv[36] = "user,id=mynet"
+emulator: argv[37] = "-device"
+emulator: argv[38] = "virtio-net-device,netdev=mynet"
+emulator: argv[39] = "-netdev"
+emulator: argv[40] = "user,id=mynet2,net=10.0.3.0/24"
+emulator: argv[41] = "-device"
+emulator: argv[42] = "virtio-net-device,netdev=mynet2"
+emulator: argv[43] = "-show-cursor"
+emulator: argv[44] = "-L"
+emulator: argv[45] = "/Users/paul/Library/Android/sdk/emulator/lib/pc-bios"
+emulator: argv[46] = "-append"
+emulator: argv[47] = "qemu=1 androidboot.hardware=ranchu keep_bootcon earlyprintk=ttyAMA0 android.qemud=1 console=0 console=0 android.checkjni=1 qemu.gles=1 cma=256M"
+emulator: argv[48] = "-android-hw"
+emulator: argv[49] = "/Users/paul/.android/avd/Pixel_API_25.avd/hardware-qemu.ini"
+Concatenated QEMU options:
+ /Users/paul/Library/Android/sdk/emulator/qemu/darwin-x86_64/qemu-system-armel -dns-server 10.0.0.1 -serial null -cpu cortex-a15 -machine type=ranchu -m 1536 -lcd-density 480 -kernel /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//kernel-ranchu -initrd /Users/paul/Library/Android/sdk/system-images/android-25/google_apis/armeabi-v7a//ramdisk.img -object iothread,id=disk-iothread -drive overlap-check=none,cache=unsafe,index=0,id=sdcard,file=/Users/paul/.android/avd/Pixel_API_25.avd/sdcard.img.qcow2,l2-cache-size=1048576 -device virtio-blk-device,drive=sdcard,iothread=disk-iothread -drive overlap-check=none,cache=unsafe,index=1,id=userdata,file=/Users/paul/.android/avd/Pixel_API_25.avd/userdata-qemu.img.qcow2,l2-cache-size=1048576 -device virtio-blk-device,drive=userdata,iothread=disk-iothread -drive overlap-check=none,cache=unsafe,index=2,id=cache,file=/Users/paul/.android/avd/Pixel_API_25.avd/cache.img.qcow2,l2-cache-size=1048576 -device virtio-blk-device,drive=cache,iothread=disk-iothread -drive overlap-check=none,cache=unsafe,index=3,id=system,file=/Users/paul/.android/avd/Pixel_API_25.avd/system.img.qcow2,read-only -device virtio-blk-device,drive=system,iothread=disk-iothread -netdev user,id=mynet -device virtio-net-device,netdev=mynet -netdev user,id=mynet2,net=10.0.3.0/24 -device virtio-net-device,netdev=mynet2 -show-cursor -L /Users/paul/Library/Android/sdk/emulator/lib/pc-bios -append 'qemu=1 androidboot.hardware=ranchu keep_bootcon earlyprintk=ttyAMA0 android.qemud=1 console=0 console=0 android.checkjni=1 qemu.gles=1 cma=256M' -android-hw /Users/paul/.android/avd/Pixel_API_25.avd/hardware-qemu.ini
+emulator: Starting QEMU main loop
+emulator: registered 'boot-properties' qemud service
+emulator: Adding boot property: 'qemu.sf.fake_camera' = 'both'
+emulator: Initializing hardware OpenGLES emulation support
+emulator: Adding boot property: 'ro.opengles.version' = '131072'
+emulator: Adding boot property: 'dalvik.vm.heapsize' = '384m'
+emulator: Adding boot property: 'qemu.hw.mainkeys' = '0'
+emulator: Adding boot property: 'qemu.sf.lcd_density' = '480'
+emulator: goldfish_events.have-dpad: false
+emulator: goldfish_events.have-trackball: false
+emulator: goldfish_events.have-camera: true
+emulator: goldfish_events.have-keyboard: true
+emulator: goldfish_events.have-lidswitch: false
+emulator: goldfish_events.have-touch: false
+emulator: goldfish_events.have-multitouch: true
+emulator: control console listening on port 5554, ADB on port 5555
+Not using any http proxy
+emulator: android_hw_fingerprint_init: fingerprint qemud listen service initialized
+
+emulator: onGuestSendCommand: [0x7ff0d5f20aa0] Adb connected, start proxing data
+emulator: _hwFingerprint_connect: connect finger print listen is called
+
+emulator: got message from guest system fingerprint HAL
+
+emulator: touched fingerprint sensor with finger id 1
+
+emulator: _hwFingerprint_connect: connect finger print listen is called
+
+emulator: got message from guest system fingerprint HAL
+
+emulator: Done with QEMU main loop
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+emulator: User configuration saved to /Users/paul/.android/avd/Pixel_API_25.avd/emulator-user.ini
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioInputDeviceIOProc
+Reason: Invalid argument
+coreaudio: Could not lock voice for audioOutputDeviceIOProc
+Reason: Invalid argument
