@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
-set LOCAL_AVD=Pixel_API_25 #Nexus_6_API_25
+AVD_NAME=Nexus_6_API_25 # Pixel_API_25 #
 
-nohup $ANDROID_HOME/tools/emulator -avd Pixel_API_25 -verbose & # background this task to continue process
+nohup $ANDROID_HOME/tools/emulator -avd $AVD_NAME -verbose & # background this task to continue process
+
+# extract new device id and provide in stdout
 
 while true; do
   if [[ $($ANDROID_HOME/platform-tools/adb shell getprop sys.boot_completed) =~ "1" ]]; then
