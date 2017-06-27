@@ -26,7 +26,7 @@ node {
         stage('Archive Build & Test Artifacts') {
             archiveArtifacts artifacts: 'app/build/outputs/*', fingerprint: true
         }
-
+/*
         stage('Run Espresso tests on emulator') {
           sh "$ADB start-server"
 
@@ -52,12 +52,12 @@ node {
               throw error
           }
         }
+*/
 
-        /*
         stage('Run Appium Tests') {
             sh "./gradlew appium:test -PBUILD_NUMBER=${env.BUILD_NUMBER}"
         }
-        */
+        
 
         currentBuild.result = "SUCCESS"
 
