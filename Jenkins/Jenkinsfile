@@ -26,39 +26,13 @@ node {
         stage('Archive Build & Test Artifacts') {
             archiveArtifacts artifacts: 'app/build/outputs/*', fingerprint: true
         }
-/*
-        stage('Run Espresso tests on emulator') {
-          sh "$ADB start-server"
-
-          def error
-          parallel (
-            launchEmulator: {
-                sh "$ANDROID_HOME/tools/qemu/linux-x86_64/qemu-system-x86_64 -engine classic -prop persist.sys.language=en -prop persist.sys.country=US -avd test -no-snapshot-load -no-snapshot-save -no-window"
-            },
-            runAndroidTests: {
-                timeout(time: 20, unit: 'SECONDS') {
-                  sh "$ADB wait-for-device"
-                }
-                try {
-                    sh "./gradlew connectedAndroidTest"
-                } catch(e) {
-                    error = e
-                }
-                sh "$ADB devices | grep emulator | cut -f1 | while read line; do $ADB -s $line emu kill; done"
-                sh "$ADB kill-server"
-            }
-          )
-          if (error != null) {
-              throw error
-          }
-        }
-*/
 
         stage('Run Appium Tests') {
             // set environment variable for appium server to host (demo purposes)
             sh "export APPIUM_ADDRESS=\$(/sbin/ip route|awk '/default/ { print \$3 }'):4723"
             sh "echo APPIUM_ADDRESS: \$APPIUM_ADDRESS"
-            sh "./gradlew appium:copyAPKs appium:test -PBUILD_NUMBER=${env.BUILD_NUMBER}"
+            sh "./gradlew appium:copyAPKs -PBUILD_NUMBER=${env.BUILD_NUMBER}"
+            sh "./gradlew appium:test -PBUILD_NUMBER=${env.BUILD_NUMBER}"
         }
 
 
@@ -103,3 +77,41 @@ def notifyBuild(String buildStatus = 'STARTED') {
   // Send notifications
   slackSend (color: colorCode, message: summary)
 }
+
+
+
+
+
+
+
+
+
+
+
+/*
+        stage('Run Espresso tests on emulator') {
+          sh "$ADB start-server"
+
+          def error
+          parallel (
+            launchEmulator: {
+                sh "$ANDROID_HOME/tools/qemu/linux-x86_64/qemu-system-x86_64 -engine classic -prop persist.sys.language=en -prop persist.sys.country=US -avd test -no-snapshot-load -no-snapshot-save -no-window"
+            },
+            runAndroidTests: {
+                timeout(time: 20, unit: 'SECONDS') {
+                  sh "$ADB wait-for-device"
+                }
+                try {
+                    sh "./gradlew connectedAndroidTest"
+                } catch(e) {
+                    error = e
+                }
+                sh "$ADB devices | grep emulator | cut -f1 | while read line; do $ADB -s $line emu kill; done"
+                sh "$ADB kill-server"
+            }
+          )
+          if (error != null) {
+              throw error
+          }
+        }
+*/
