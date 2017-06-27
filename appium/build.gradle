@@ -11,3 +11,9 @@ dependencies {
 test {
     testLogging.showStandardStreams = true
 }
+
+task copyAPKs(type: Copy) {
+    from('../app/build/outputs/apk')
+    into('build/outputs/apk')
+    include('*.apk')
+}

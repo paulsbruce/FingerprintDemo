@@ -58,7 +58,7 @@ node {
             // set environment variable for appium server to host (demo purposes)
             sh "export APPIUM_ADDRESS=\$(/sbin/ip route|awk '/default/ { print \$3 }'):4723"
             sh "echo APPIUM_ADDRESS: \$APPIUM_ADDRESS"
-            sh "./gradlew appium:test -PBUILD_NUMBER=${env.BUILD_NUMBER}"
+            sh "./gradlew appium:copyAPKs appium:test -PBUILD_NUMBER=${env.BUILD_NUMBER}"
         }
 
 
