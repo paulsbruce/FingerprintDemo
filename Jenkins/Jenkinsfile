@@ -56,8 +56,8 @@ node {
 
         stage('Run Appium Tests') {
             // set environment variable for appium server to host (demo purposes)
-            sh "export APPIUM_ADDRESS=$(/sbin/ip route|awk '/default/ { print $3 }'):4723"
-            
+            sh "export APPIUM_ADDRESS=\$(/sbin/ip route|awk '/default/ { print \$3 }'):4723"
+
             sh "./gradlew appium:test -PBUILD_NUMBER=${env.BUILD_NUMBER}"
         }
 
