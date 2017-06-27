@@ -87,7 +87,7 @@ public class LoginTests {
 
     ...therefore, for the time being, we have to run with Appium and a custom ADB command to simulate fingerprint input
      */
-    @Test
+    //@Test
     @RequiresDevice
     @SdkSuppress(minSdkVersion = Build.VERSION_CODES.M)
     public void loginUsingFingerprint() throws IOException {
