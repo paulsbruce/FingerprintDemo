@@ -7,3 +7,7 @@ dependencies {
 
     compile 'io.appium:java-client:4.1.2'
 }
+
+test {
+    testLogging.showStandardStreams = true
+}
