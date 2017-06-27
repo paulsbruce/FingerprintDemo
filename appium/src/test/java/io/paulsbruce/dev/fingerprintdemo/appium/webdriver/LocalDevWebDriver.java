@@ -37,12 +37,7 @@ class LocalDevWebDriver extends AndroidDriver {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability(CapabilityType.VERSION, "6.0.1");
 
-        // demo hack; need to create a custom gradle copy task instead
-        String sFilepath = "app/build/outputs/apk/app-debug.apk";
-        if(!(new File(sFilepath)).exists())
-            sFilepath = "/var/jenkins_home/workspace/FingerprintDemo-pipeline/app/build/outputs/apk/app-debug.apk";
-
-        String filePath = new File(sFilepath).getAbsolutePath();
+        String filePath = new File("app/build/outputs/apk/app-debug.apk").getAbsolutePath();
         capabilities.setCapability("app", filePath);
 
         return capabilities;
