@@ -15,8 +15,13 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class LocalDevWebDriver extends AndroidDriver {
 
+    private static String getAppiumAddress() {
+        String s = System.getenv("APPIUM_ADDRESS");
+        return s;
+    }
+
     public LocalDevWebDriver() throws Exception {
-        super(new URL("http://appium-server:4723/wd/hub"), getCaps()); // for local dev machine, add hosts entry
+        super(new URL("http://"+getAppiumAddress()+"/wd/hub"), getCaps()); // for local dev machine, add hosts entry
         this.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
