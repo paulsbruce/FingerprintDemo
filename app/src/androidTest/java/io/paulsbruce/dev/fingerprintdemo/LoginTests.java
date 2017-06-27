@@ -88,7 +88,7 @@ public class LoginTests {
     ...therefore, for the time being, we have to run with Appium and a custom ADB command to simulate fingerprint input
      */
     //@Test
-    @RequiresDevice
+    @RequiresDevice // doesn't work on modern emulators, fixed but not rolled out 6/21/2017; https://issuetracker.google.com/issues/37123213
     @SdkSuppress(minSdkVersion = Build.VERSION_CODES.M)
     public void loginUsingFingerprint() throws IOException {
 
@@ -96,7 +96,7 @@ public class LoginTests {
         onView(withId(R.id.finger_sign_in_button))
                 .perform(click());
 
-        // fails because this code is executed on the device, not on the workstation
+        // fails because this Espresso code is executed on the device, not on the workstation
         Runtime.getRuntime().exec("adb -e emu finger touch 1"); // this doesn't work because tests run on the device
 
         onView(withText(containsString("successfully")))

@@ -28,7 +28,7 @@ public class LocalDevWebDriver extends AndroidDriver {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability(CapabilityType.VERSION, "6.0.1");
 
-        String filePath = new File("../app/build/outputs/apk/app-debug.apk").getAbsolutePath();
+        String filePath = new File("app/build/outputs/apk/app-debug.apk").getAbsolutePath();
         capabilities.setCapability("app", filePath);
 
         return capabilities;

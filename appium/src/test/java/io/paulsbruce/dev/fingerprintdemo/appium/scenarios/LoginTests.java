@@ -11,7 +11,10 @@ import io.paulsbruce.dev.fingerprintdemo.appium.UITestBase;
 
 public class LoginTests extends UITestBase {
 
-    @Test
+    /*
+        This type of functionality can be tested via Espresso, so don't use Appium
+     */
+    //@Test
     public void loginUsingEmail()
     {
         // beginning with default activity ('Login')
@@ -23,16 +26,14 @@ public class LoginTests extends UITestBase {
     }
 
     @Test
-    public void loginUsingFingerprint() {
+    public void loginUsingFingerprint() throws Exception {
 
         // beginning with default activity ('Login')
 
         driver.findElement(By.id("finger_sign_in_button")).click();
 
-        try {
-            Runtime.getRuntime().exec("adb -e emu finger touch 1");
-        } catch(IOException e) {
-        }
+        // runs on appium server where adb is installed, emulator must be attached to this node
+        Runtime.getRuntime().exec("adb -e emu finger touch 1");
 
         Assert.assertTrue(driver.findElement(By.xpath("//*[contains(@text,'successfully')]")).isDisplayed());
     }
