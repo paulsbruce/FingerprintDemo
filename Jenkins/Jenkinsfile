@@ -13,17 +13,21 @@ node {
         }
         */
 
-        stage('Build Debug APK') {
-            sh "./gradlew assembleDebug -PBUILD_NUMBER=${env.BUILD_NUMBER}"
+        stage('Build Debug APKs') {
+            sh "./gradlew assembleDebug assembleAndroidTest -PBUILD_NUMBER=${env.BUILD_NUMBER}"
         }
 
-        stage('Build Espresso Tests') {
-            sh "./gradlew assembleAndroidTest -PBUILD_NUMBER=${env.BUILD_NUMBER}"
+        stage('Run unit tests') {
+            sh "./gradlew testDebugUnitTest -PBUILD_NUMBER=${env.BUILD_NUMBER}"
         }
 
-        #stage('Run UI Smoke Test') {
-        #    sh "chmod u+x ./Jenkins/callPerfectoFromPipeline.sh && ./Jenkins/callPerfectoFromPipeline.sh"
-        #}
+        stage('Run Espresso Tests') {
+            sh "./gradlew connectedAndroidTest -PBUILD_NUMBER=${env.BUILD_NUMBER}"
+        }
+
+        stage('Run Appium Tests') {
+            sh "./gradlew connectedAndroidTest -PBUILD_NUMBER=${env.BUILD_NUMBER}"
+        }
 
         stage('Archive Artifacts') {
             archiveArtifacts artifacts: 'app/build/outputs/apk/*.apk', fingerprint: true
