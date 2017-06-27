@@ -8,12 +8,12 @@ import org.openqa.selenium.WebDriver;
 
 public class WebDriverFactory {
 
-    public static WebDriver getDriver() {
+    public static WebDriver getDriver() throws Exception {
         WebDriver driver = null;
         try {
             driver = new LocalDevWebDriver();
         } catch(Exception ex) {
-            System.out.println(ex.toString());
+            throw new Exception("APPIUM_ADDRESS: " + System.getenv("APPIUM_ADDRESS"), ex);
         }
         assert driver != null;
         return driver;
