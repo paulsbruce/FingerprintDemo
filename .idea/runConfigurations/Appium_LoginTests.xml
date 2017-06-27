@@ -1,0 +1,31 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="Appium_LoginTests" type="AndroidJUnit" factoryName="Android JUnit">
+    <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+      <pattern>
+        <option name="PATTERN" value="io.paulsbruce.dev.fingerprintdemo.appium.scenarios.*" />
+        <option name="ENABLED" value="true" />
+      </pattern>
+    </extension>
+    <module name="appium" />
+    <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+    <option name="ALTERNATIVE_JRE_PATH" />
+    <option name="PACKAGE_NAME" value="io.paulsbruce.dev.fingerprintdemo.appium.scenarios" />
+    <option name="MAIN_CLASS_NAME" value="io.paulsbruce.dev.fingerprintdemo.appium.scenarios.LoginTests" />
+    <option name="METHOD_NAME" value="" />
+    <option name="TEST_OBJECT" value="class" />
+    <option name="VM_PARAMETERS" value="" />
+    <option name="PARAMETERS" value="" />
+    <option name="WORKING_DIRECTORY" value="" />
+    <option name="ENV_VARIABLES" />
+    <option name="PASS_PARENT_ENVS" value="true" />
+    <option name="TEST_SEARCH_SCOPE">
+      <value defaultName="singleModule" />
+    </option>
+    <envs />
+    <patterns />
+    <method>
+      <option name="Gradle.BeforeRunTask" enabled="true" tasks="assembleDebug" externalProjectPath="$PROJECT_DIR$/app" vmOptions="" scriptParameters="" />
+      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_presmoke.local.sh" />
+    </method>
+  </configuration>
+</component>

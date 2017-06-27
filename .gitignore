@@ -14,3 +14,5 @@ gradlew.bat
 .idea/misc.xml
 /Node/
 app/libs/
+app/build
+appium/build

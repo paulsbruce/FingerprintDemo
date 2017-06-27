@@ -13,7 +13,7 @@ public class WebDriverFactory {
         try {
             driver = new LocalDevWebDriver();
         } catch(Exception ex) {
-
+            System.out.println(ex.toString());
         }
         assert driver != null;
         return driver;

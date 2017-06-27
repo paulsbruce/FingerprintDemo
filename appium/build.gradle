@@ -7,6 +7,3 @@ dependencies {
 
     compile 'io.appium:java-client:4.1.2'
 }
-
-sourceCompatibility = "1.7"
-targetCompatibility = "1.7"

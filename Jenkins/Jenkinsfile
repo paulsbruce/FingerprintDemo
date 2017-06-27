@@ -26,12 +26,13 @@ node {
         }
 
         stage('Run Appium Tests') {
-            sh "./gradlew connectedAndroidTest -PBUILD_NUMBER=${env.BUILD_NUMBER}"
+            sh "./gradlew appium:test -PBUILD_NUMBER=${env.BUILD_NUMBER}"
         }
 
-        stage('Archive Artifacts') {
-            archiveArtifacts artifacts: 'app/build/outputs/apk/*.apk', fingerprint: true
+        stage('Archive Build & Test Artifacts') {
+            archiveArtifacts artifacts: 'app/build/outputs/*', fingerprint: true
         }
+
 
     } catch (e) {
         // If there was an exception thrown, the build failed
