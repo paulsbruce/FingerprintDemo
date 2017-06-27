@@ -16,3 +16,6 @@ gradlew.bat
 app/libs/
 app/build
 appium/build
+nohup.out
+set_animation_permissions.sh
+appium/libs/
