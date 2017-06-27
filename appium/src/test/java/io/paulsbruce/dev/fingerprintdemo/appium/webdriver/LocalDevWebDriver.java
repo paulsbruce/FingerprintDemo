@@ -11,16 +11,19 @@ import io.appium.java_client.android.AndroidDriver;
 
 /**
  * Created by paul on 6/22/17.
+ * Implementation for local dev scenarios;
  */
 
-public class LocalDevWebDriver extends AndroidDriver {
+class LocalDevWebDriver extends AndroidDriver {
 
     private static String getAppiumAddress() {
-        String s = System.getenv("APPIUM_ADDRESS");
+        String s;
+        //s = System.getenv("APPIUM_ADDRESS");
+        s = "paulsbruce-appium.ngrok.io:80";
         return s;
     }
 
-    public LocalDevWebDriver() throws Exception {
+    LocalDevWebDriver() throws Exception {
         super(new URL("http://"+getAppiumAddress()+"/wd/hub"), getCaps()); // for local dev machine, add hosts entry
         this.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }

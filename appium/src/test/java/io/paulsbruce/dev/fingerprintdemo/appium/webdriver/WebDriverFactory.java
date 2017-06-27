@@ -16,9 +16,9 @@ public class WebDriverFactory {
         try {
             driver = new LocalDevWebDriver();
         } catch(Exception ex) {
-            Logger.getAnonymousLogger().info("APPIUM_ADDRESS: " + System.getenv("APPIUM_ADDRESS"));
-            System.err.println("APPIUM_ADDRESS: " + System.getenv("APPIUM_ADDRESS"));
-            System.err.println(ex.toString());
+            Logger log = Logger.getAnonymousLogger();
+            log.info("APPIUM_ADDRESS: " + System.getenv("APPIUM_ADDRESS"));
+            log.warning(ex.toString());
         }
         assert driver != null;
         return driver;
