@@ -6,6 +6,7 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import java.io.File;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 import io.appium.java_client.android.AndroidDriver;
 
@@ -40,6 +41,8 @@ class LocalDevWebDriver extends AndroidDriver {
         String sFilepath = "app/build/outputs/apk/app-debug.apk"; // in IDE
         if(!(new File(sFilepath)).exists())
             sFilepath = "build/outputs/apk/app-debug.apk";
+
+        Logger.getAnonymousLogger().info("CURRENT_DIRECTORY: "+(new File("./")).getAbsolutePath());
 
         String filePath = new File(sFilepath).getAbsolutePath();
         capabilities.setCapability("app", filePath);
