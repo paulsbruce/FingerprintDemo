@@ -39,7 +39,7 @@ class LocalDevWebDriver extends AndroidDriver {
 
         String sFilepath = "app/build/outputs/apk/app-debug.apk"; // in IDE
         if(!(new File(sFilepath)).exists())
-            sFilepath = "/Users/paul/git/paulsbruce/FingerprintDemo/app/build/outputs/apk/app-debug.apk";//"build/outputs/apk/app-debug.apk";
+            sFilepath = "build/outputs/apk/app-debug.apk";
 
         String filePath = new File(sFilepath).getAbsolutePath();
         capabilities.setCapability("app", filePath);
