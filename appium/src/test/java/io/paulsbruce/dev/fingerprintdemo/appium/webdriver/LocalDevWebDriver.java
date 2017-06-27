@@ -16,7 +16,7 @@ import io.appium.java_client.android.AndroidDriver;
 public class LocalDevWebDriver extends AndroidDriver {
 
     public LocalDevWebDriver() throws Exception {
-        super(new URL("http://127.0.0.1:4723/wd/hub"), getCaps());
+        super(new URL("http://appium-server:4723/wd/hub"), getCaps()); // for local dev machine, add hosts entry
         this.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
