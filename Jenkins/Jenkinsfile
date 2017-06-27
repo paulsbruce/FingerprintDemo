@@ -25,9 +25,9 @@ node {
             sh "./gradlew connectedAndroidTest -PBUILD_NUMBER=${env.BUILD_NUMBER}"
         }
 
-        stage('Run Appium Tests') {
-            sh "./gradlew appium:test -PBUILD_NUMBER=${env.BUILD_NUMBER}"
-        }
+        #stage('Run Appium Tests') {
+      #      sh "./gradlew appium:test -PBUILD_NUMBER=${env.BUILD_NUMBER}"
+        #}
 
         stage('Archive Build & Test Artifacts') {
             archiveArtifacts artifacts: 'app/build/outputs/*', fingerprint: true
