@@ -1,6 +1,8 @@
 node {
 
     try {
+        def ANDROID_HOME='/opt/android-sdk-linux'
+        def ADB="$ANDROID_HOME/platform-tools/adb"
 
         stage('Checkout') {
             checkout scm
@@ -21,8 +23,34 @@ node {
             sh "./gradlew testDebugUnitTest -PBUILD_NUMBER=${env.BUILD_NUMBER}"
         }
 
-        stage('Run Espresso Tests') {
-            sh "./gradlew connectedAndroidTest -PBUILD_NUMBER=${env.BUILD_NUMBER}"
+        stage('Archive Build & Test Artifacts') {
+            archiveArtifacts artifacts: 'app/build/outputs/*', fingerprint: true
+        }
+
+        stage('Run Espresso tests on emulator') {
+          sh "$ADB start-server"
+
+          def error
+          parallel (
+            launchEmulator: {
+                sh "$ANDROID_HOME/tools/qemu/linux-x86_64/qemu-system-x86_64 -engine classic -prop persist.sys.language=en -prop persist.sys.country=US -avd test -no-snapshot-load -no-snapshot-save -no-window"
+            },
+            runAndroidTests: {
+                timeout(time: 20, unit: 'SECONDS') {
+                  sh "$ADB wait-for-device"
+                }
+                try {
+                    sh "./gradlew connectedAndroidTest"
+                } catch(e) {
+                    error = e
+                }
+                sh "$ADB devices | grep emulator | cut -f1 | while read line; do $ADB -s $line emu kill; done"
+                sh "$ADB kill-server"
+            }
+          )
+          if (error != null) {
+              throw error
+          }
         }
 
         /*
@@ -31,10 +59,7 @@ node {
         }
         */
 
-        stage('Archive Build & Test Artifacts') {
-            archiveArtifacts artifacts: 'app/build/outputs/*', fingerprint: true
-        }
-
+        currentBuild.result = "SUCCESS"
 
     } catch (e) {
         // If there was an exception thrown, the build failed
