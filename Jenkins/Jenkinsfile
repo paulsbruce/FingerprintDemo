@@ -1,8 +1,6 @@
 node {
 
     try {
-        def ANDROID_HOME='/opt/android-sdk-linux'
-        def ADB="$ANDROID_HOME/platform-tools/adb"
 
         stage('Checkout') {
             checkout scm
@@ -89,6 +87,9 @@ def notifyBuild(String buildStatus = 'STARTED') {
 
 
 /*
+        def ANDROID_HOME='/opt/android-sdk-linux'
+        def ADB="$ANDROID_HOME/platform-tools/adb"
+
         stage('Run Espresso tests on emulator') {
           sh "$ADB start-server"
 

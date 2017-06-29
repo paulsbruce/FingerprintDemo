@@ -20,8 +20,7 @@ class LocalDevWebDriver extends AndroidDriver {
     private static String getAppiumAddress() {
         String s;
         s = System.getenv("APPIUM_ADDRESS");
-        if(s == null)
-            s = "paulsbruce-appium.ngrok.io:80";
+
         return s;
     }
 
@@ -38,18 +37,9 @@ class LocalDevWebDriver extends AndroidDriver {
         capabilities.setCapability("platformName", "Android");
         capabilities.setCapability(CapabilityType.VERSION, "6.0.1");
 
-        String sFilepath = "app/build/outputs/apk/app-debug.apk"; // in IDE
-        if((new File(sFilepath)).exists()) {
-            String filePath = new File(sFilepath).getAbsolutePath();
-            capabilities.setCapability("app", filePath);
-
-        } else {
-            sFilepath = "build/outputs/apk/app-debug.apk";
-
-            capabilities.setCapability("appPackage", "io.paulsbruce.dev.fingerprintdemo");
-            capabilities.setCapability("appActivity", ".LoginActivity");
-        }
-
+        String sFilepath = "build/outputs/apk/app-debug.apk"; // in IDE
+        String filePath = new File(sFilepath).getAbsolutePath();
+        capabilities.setCapability("app", filePath);
         Logger.getAnonymousLogger().info("CURRENT_DIRECTORY: "+(new File("./")).getAbsolutePath());
 
         return capabilities;
